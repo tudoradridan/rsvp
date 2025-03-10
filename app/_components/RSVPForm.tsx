@@ -106,7 +106,7 @@ const RSVPForm = () => {
   };
 
   return (
-    <section className="w-full max-w-3xl md:mx-auto my-10 p-4 shadow-lg m-4 md:m-2 bg-white">
+    <section className="w-full max-w-3xl md:mx-auto my-10 p-4 shadow-lg  bg-white">
       <h1 className="text-2xl font-bold mb-4 text-center text-gold-star">
         {title}
       </h1>

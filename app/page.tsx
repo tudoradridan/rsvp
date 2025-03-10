@@ -12,6 +12,7 @@ import RSVPForm from "@/app/_components/RSVPForm";
 import MasonryGrid from "@/app/_components/MasonryGrid";
 import Parents from "@/app/_components/Parents";
 import Location from "@/app/_components/Location";
+import Section from "@/app/_components/Section";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
       <Hero />
       <AnimatedComponent>
         <Parents />
+      </AnimatedComponent>
+      <AnimatedComponent>
+        <Section />
       </AnimatedComponent>
       <AnimatedComponent>
         <Location />

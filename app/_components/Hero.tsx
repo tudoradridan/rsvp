@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
     <section className="relative w-full min-h-screen">
       <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-start z-40 flex-col">
         <motion.h1
-          className="text-white text-xl font-bold sm:text-4xl allura-font mt-16 sm:mt-20"
+          className="text-white text-2xl font-bold sm:text-4xl allura-font mt-16 sm:mt-20"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

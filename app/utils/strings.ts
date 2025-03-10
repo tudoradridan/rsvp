@@ -35,4 +35,7 @@ export const STRINGS = {
   menuSelect: "Selectează tipul de meniu",
   menuStandard: "Meniu standard",
   menuVegetarian: "Meniu vegetarian",
+  section1: "Vă așteptăm să ne fiți alături",
+  section2: "la nunta noastră din",
+  section3: "23 August 2025",
 };
