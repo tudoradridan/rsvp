@@ -33,7 +33,10 @@ const RSVPForm = () => {
   const {
     title,
     description,
-    eventDateLabel,
+    description2,
+    description22,
+    description3,
+    description33,
     eventDate,
     viewOnMapButton,
     nameLabel,
@@ -102,11 +105,18 @@ const RSVPForm = () => {
   };
 
   return (
-    <section className="md:max-w-3xl md:mx-auto my-10 p-4 shadow-lg m-4 md:m-2 bg-white">
-      <h1 className="text-2xl font-bold mb-4">{title}</h1>
-      <p className="mb-6 allura-font text-2xl">{description}</p>
-      <div className="mb-6">
-        <Label>{eventDateLabel}</Label>
+    <section className="w-full max-w-3xl md:mx-auto my-10 p-4 shadow-lg m-4 md:m-2 bg-white">
+      <h1 className="text-2xl font-bold mb-4 text-center text-gold-star">
+        {title}
+      </h1>
+      <p className="mb-2 allura-font text-2xl text-center">{description}</p>
+
+      <p className="text-center">{description2}</p>
+      <p className="text-center">{description22}</p>
+      <hr className="my-3 h-2" />
+      <p className="text-center">{description3}</p>
+      <p className="mb-2 text-center">{description33}</p>
+      <div className="my-6">
         <Calendar
           mode="single"
           selected={new Date(eventDate)}

@@ -1,9 +1,11 @@
 export const STRINGS = {
-  title: "Invitație online pentru nuntă",
-  description:
-    "Suntem incantati sa va avem alaturi de noi in ziua nuntii noastre. Va rugam sa completati formularul de mai jos pentru a confirma prezenta.",
+  title: "Vei participa?",
+  description: "Te așteptăm cu drag!",
+  description2: "Completează formularul de mai jos pentru",
+  description22: "a ne anunța decizia ta.",
+  description3: "Te rugăm să ne comunici decizia ta până",
+  description33: "la data de 1 iulie 2025.",
   eventDate: "2025-08-23",
-  eventDateLabel: "Data evenimentului",
   eventLocation: `Event Park @Lagoo Snagov, 44°41'21.6"N 26°09'45.6"E, 077165`,
   nameLabel: "Nume",
   emailLabel: "Email",

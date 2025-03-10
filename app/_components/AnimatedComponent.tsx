@@ -27,6 +27,7 @@ const AnimatedComponent = ({ children }: { children: React.ReactNode }) => {
       initial="hidden"
       animate={controls}
       variants={variants}
+      className="w-full"
     >
       {children}
     </motion.div>
