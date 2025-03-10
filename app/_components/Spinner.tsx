@@ -13,16 +13,14 @@ const Spinner: React.FC = () => {
         animate={{ x: 0 }}
         transition={{ type: "spring", stiffness: 50 }}
       >
-        <div className="rounded-full h-32 w-32 border-t-2 border-b-2 border-white">
-          <Image
-            src={WeddingCoupleImage}
-            alt="Wedding Couple"
-            width={120}
-            height={120}
-            style={{ objectFit: "cover" }}
-            quality={100}
-          />
-        </div>
+        <Image
+          src={WeddingCoupleImage}
+          alt="Wedding Couple"
+          width={200}
+          height={200}
+          style={{ objectFit: "cover" }}
+          quality={100}
+        />
       </motion.div>
     </div>
   );

@@ -8,6 +8,7 @@ export const STRINGS = {
   nameLabel: "Nume",
   emailLabel: "Email",
   accompanyLabel: "Număr de persoane",
+  detailsLabel: "Alte observații",
   noOption: "Nu pot să particip",
   submitButton: "Confirm prezența",
   thankYouMessage: "Multumim pentru raspuns!",

@@ -14,6 +14,7 @@ export async function submitRSVP(formData: FormData) {
   const accompany = formData.get("accompany") as string;
   const attendance = formData.get("attendance") as string;
   const menu = formData.get("menu") as string;
+  const details = formData.get("details") as string;
 
   //eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { data, error } = await supabase.from("rsvps").insert([
@@ -23,6 +24,7 @@ export async function submitRSVP(formData: FormData) {
       accompany,
       attendance,
       menu,
+      details,
     },
   ]);
 
@@ -49,6 +51,7 @@ export async function submitRSVP(formData: FormData) {
         <p><strong>Number of Guests:</strong> ${accompany}</p>
         <p><strong>Attendance:</strong> ${attendance}</p>
         <p><strong>Menu:</strong> ${menu}</p>
+        <p><strong>Alte observatii:</strong> ${details}</p>
       `,
       });
     } catch (error) {

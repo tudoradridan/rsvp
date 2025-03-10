@@ -26,6 +26,7 @@ const RSVPForm = () => {
   const [menu, setMenu] = useState("standard");
   const [accompany, setAccompany] = useState<string | null>(null);
   const [attendance, setAttendance] = useState("Da");
+  const [details, setDetails] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isLoading, setIsLoading] = useState(false);
 
@@ -38,6 +39,7 @@ const RSVPForm = () => {
     nameLabel,
     emailLabel,
     accompanyLabel,
+    detailsLabel,
     submitButton,
     eventLocation,
     menuLabel,
@@ -66,6 +68,7 @@ const RSVPForm = () => {
     formData.append("accompany", accompany || "0");
     formData.append("attendance", attendance);
     formData.append("menu", menu);
+    formData.append("details", details);
 
     setIsLoading(true);
     const response = await submitRSVP(formData);
@@ -174,6 +177,15 @@ const RSVPForm = () => {
               </SelectGroup>
             </SelectContent>
           </Select>
+        </div>
+        <div>
+          <Label htmlFor="details">{detailsLabel}</Label>
+          <Input
+            id="details"
+            type="text"
+            value={details}
+            onChange={(e) => setDetails(e.target.value)}
+          />
         </div>
         <div className="flex flex-col items-center justify-center gap-4 my-4">
           <Button

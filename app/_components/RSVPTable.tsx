@@ -18,6 +18,7 @@ interface RSVP {
   accompany: number;
   attendance: string;
   menu: string;
+  details: string;
 }
 
 interface RSVPTableProps {
@@ -62,6 +63,7 @@ export function RSVPTable({ data }: RSVPTableProps) {
                   <TableCell>{rsvp.email}</TableCell>
                   <TableCell>{rsvp.accompany || "0"}</TableCell>
                   <TableCell>{rsvp.menu}</TableCell>
+                  <TableCell>{rsvp.details}</TableCell>
                   <TableCell>{rsvp.attendance}</TableCell>
                 </TableRow>
               ))
