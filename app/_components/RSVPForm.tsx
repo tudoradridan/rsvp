@@ -84,7 +84,8 @@ const RSVPForm = () => {
       setEmail("");
       setAccompany(null);
       setMenu("");
-      setAttendance("Da");
+      setAttendance("");
+      setDetails("");
       setErrors({});
     } else {
       // SHOW ERROR MESSAGE TOAST

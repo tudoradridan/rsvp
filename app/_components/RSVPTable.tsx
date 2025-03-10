@@ -52,6 +52,7 @@ export function RSVPTable({ data }: RSVPTableProps) {
               <TableHead>Number of Guests</TableHead>
               <TableHead>Menu</TableHead>
               <TableHead>Attending</TableHead>
+              <TableHead>Details</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -63,8 +64,8 @@ export function RSVPTable({ data }: RSVPTableProps) {
                   <TableCell>{rsvp.email}</TableCell>
                   <TableCell>{rsvp.accompany || "0"}</TableCell>
                   <TableCell>{rsvp.menu}</TableCell>
-                  <TableCell>{rsvp.details}</TableCell>
                   <TableCell>{rsvp.attendance}</TableCell>
+                  <TableCell>{rsvp.details}</TableCell>
                 </TableRow>
               ))
             ) : (

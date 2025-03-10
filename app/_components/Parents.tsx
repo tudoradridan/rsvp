@@ -16,11 +16,11 @@ const Parents = () => {
         quality={100}
         className="rotate-90 my-8"
       />
-      <p className="allura-font text-2xl text-gold-star font-semibold">
+      <p className="allura-font text-3xl text-gold-star font-semibold">
         {parents}
       </p>
       <p>{parentsName}</p>
-      <p className="allura-font text-2xl text-gold-star font-semibold">
+      <p className="allura-font text-3xl text-gold-star font-semibold">
         {godParents}
       </p>
       <p>{godParentsName}</p>

@@ -25,6 +25,8 @@ const Parents = () => {
     partyLabel,
     partyLocation,
     partyLocation2,
+    whereAndWhen,
+    location,
   } = STRINGS;
 
   const openGoogleMapsChurch = () => {
@@ -41,96 +43,104 @@ const Parents = () => {
     );
   };
   return (
-    <div className="flex flex-col items-center w-full">
-      <div className="shadow-lg m-4 md:m-2 bg-white">
-        <div className="flex flex-col">
-          <Image
-            src={ChurchImage}
-            alt="Church Image"
-            width={770}
-            height={770}
-            className="rounded"
-            quality={100}
-          />
-        </div>
-        <div className="p-6">
-          <p className="text-lg sm:text-2xl font-semibold my-4">{church}</p>
-          <div className="flex flex-row gap-2">
+    <>
+      <div className="flex flex-col items-center w-full">
+        <h2 className="text-gold-star text-start md:text-center text-4xl allura-font font-bold">
+          {location}
+        </h2>
+        <h3 className="text-2xl font-semibold my-4 text-start md:text-center">
+          {whereAndWhen}
+        </h3>
+        <div className="shadow-lg m-4 md:m-2 bg-white">
+          <div className="flex flex-col">
             <Image
-              src={AugustImage}
-              alt="Date Church Image"
-              width={20}
-              height={20}
-              style={{ objectFit: "cover" }}
+              src={ChurchImage}
+              alt="Church Image"
+              width={770}
+              height={770}
+              className="rounded"
               quality={100}
-              className="mb-4"
             />
-            <span>{churchLabel}</span>
           </div>
-          <div className="flex flex-row gap-2">
-            <IoLocationOutline size={20} />
-            <span>{churchLocation}</span>
+          <div className="p-6">
+            <p className="text-lg sm:text-2xl font-semibold my-4">{church}</p>
+            <div className="flex flex-row gap-2">
+              <Image
+                src={AugustImage}
+                alt="Date Church Image"
+                width={20}
+                height={20}
+                style={{ objectFit: "cover" }}
+                quality={100}
+                className="mb-4"
+              />
+              <span>{churchLabel}</span>
+            </div>
+            <div className="flex flex-row gap-2">
+              <IoLocationOutline size={20} />
+              <span>{churchLocation}</span>
+            </div>
+            <div>{churchLocation2}</div>
+            <div className="mt-4">
+              <Button
+                className="w-full"
+                type="button"
+                variant="outline"
+                onClick={openGoogleMapsChurch}
+              >
+                <MapPin />
+                {viewOnMapButton}
+              </Button>
+            </div>
           </div>
-          <div>{churchLocation2}</div>
-          <div className="mt-4">
-            <Button
-              className="w-full"
-              type="button"
-              variant="outline"
-              onClick={openGoogleMapsChurch}
-            >
-              <MapPin />
-              {viewOnMapButton}
-            </Button>
+        </div>
+
+        <div className="shadow-lg m-4 md:m-2 bg-white">
+          <div className="flex flex-col">
+            <Image
+              src={LocationImage}
+              alt="Party Image"
+              width={770}
+              height={770}
+              className="rounded"
+              quality={100}
+            />
+          </div>
+          <div className="p-6">
+            <p className="text-lg sm:text-2xl font-semibold my-4">{party}</p>
+            <div className="flex flex-row gap-2">
+              <Image
+                src={AugustImage}
+                alt="Date Church Image"
+                width={20}
+                height={20}
+                style={{ objectFit: "cover" }}
+                quality={100}
+                className="mb-4"
+              />
+              <span>{partyLabel}</span>
+            </div>
+            <div className="flex flex-row gap-2">
+              <IoLocationOutline size={20} />
+              <span>{partyLocation}</span>
+            </div>
+            <div className="mb-4">{partyLocation2}</div>
+
+            <div className="mt-4">
+              <Button
+                className="w-full"
+                type="button"
+                variant="outline"
+                onClick={openGoogleMapsParty}
+              >
+                <MapPin />
+                {viewOnMapButton}
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-
-      <div className="shadow-lg m-4 md:m-2 bg-white">
-        <div className="flex flex-col">
-          <Image
-            src={LocationImage}
-            alt="Party Image"
-            width={770}
-            height={770}
-            className="rounded"
-            quality={100}
-          />
-        </div>
-        <div className="p-6">
-          <p className="text-lg sm:text-2xl font-semibold my-4">{party}</p>
-          <div className="flex flex-row gap-2">
-            <Image
-              src={AugustImage}
-              alt="Date Church Image"
-              width={20}
-              height={20}
-              style={{ objectFit: "cover" }}
-              quality={100}
-              className="mb-4"
-            />
-            <span>{partyLabel}</span>
-          </div>
-          <div className="flex flex-row gap-2">
-            <IoLocationOutline size={20} />
-            <span>{partyLocation}</span>
-          </div>
-          <div className="mb-4">{partyLocation2}</div>
-
-          <div className="mt-4">
-            <Button
-              className="w-full"
-              type="button"
-              variant="outline"
-              onClick={openGoogleMapsParty}
-            >
-              <MapPin />
-              {viewOnMapButton}
-            </Button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 
