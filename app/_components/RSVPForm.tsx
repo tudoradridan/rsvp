@@ -177,7 +177,7 @@ const RSVPForm = () => {
         </div>
         <div>
           <Label htmlFor="menu">{menuLabel}</Label>
-          <Select onValueChange={(value) => setMenu(value)}>
+          <Select value={menu} onValueChange={(value) => setMenu(value)}>
             <SelectTrigger className="w-full">
               <SelectValue placeholder={menuSelect} />
             </SelectTrigger>
