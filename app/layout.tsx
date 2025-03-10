@@ -9,13 +9,13 @@ import { Toaster } from "@/components/ui/sonner";
 
 import "./globals.css";
 
-export const oswald = Oswald({
+const oswald = Oswald({
   variable: "--font-oswald",
   subsets: ["latin"],
   display: "swap",
 });
 
-export const allura = Allura({
+const allura = Allura({
   variable: "--font-allura",
   subsets: ["latin", "latin-ext"],
   display: "swap",
