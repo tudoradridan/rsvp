@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          23.08.2025
+          23 August 2025
         </motion.h5>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
