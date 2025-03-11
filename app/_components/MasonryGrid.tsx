@@ -12,6 +12,7 @@ import Image8 from "@/app/images/image8.png";
 import Image9 from "@/app/images/image9.png";
 import Image10 from "@/app/images/image10.png";
 import Image11 from "@/app/images/image11.png";
+import Image12 from "@/app/images/image12.png";
 
 const images = [
   Image2,
@@ -25,6 +26,7 @@ const images = [
   Image7,
   Image8,
   Image10,
+  Image12,
 ];
 
 const MasonryGrid = () => {
