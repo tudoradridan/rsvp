@@ -1,13 +1,13 @@
 import React from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { STRINGS } from "@/app/utils/strings";
+import SectionImage from "@/app/images/section.jpg";
 
 const Section: React.FC = () => {
   const { section1, section2, section3 } = STRINGS;
-  const backgroundImageUrl =
-    "https://images.unsplash.com/photo-1496661415325-ef852f9e8e7c?q=80&w=2727&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
   const sectionStyle = {
-    backgroundImage: `url(${backgroundImageUrl})`,
+    backgroundImage: `url(${SectionImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     display: "flex",
