@@ -1,13 +1,12 @@
 import React from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { STRINGS } from "@/app/utils/strings";
-import SectionImage from "@/app/images/section.jpg";
 
 const Section: React.FC = () => {
   const { section1, section2, section3 } = STRINGS;
 
   const sectionStyle = {
-    backgroundImage: `url(${SectionImage})`,
+    backgroundImage: `url("/section.jpg")`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     display: "flex",
