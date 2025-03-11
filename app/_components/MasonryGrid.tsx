@@ -9,18 +9,19 @@ import Image6 from "@/app/images/image6.png";
 import Image5 from "@/app/images/image5.png";
 import Image7 from "@/app/images/image7.png";
 import Image8 from "@/app/images/image8.png";
+import Image9 from "@/app/images/image9.png";
 import Image10 from "@/app/images/image10.png";
+import Image11 from "@/app/images/image11.png";
 
 const images = [
   Image2,
-
   Image4,
   Image5,
-
+  Image11,
   Image6,
   Image3,
   Image1,
-
+  Image9,
   Image7,
   Image8,
   Image10,
