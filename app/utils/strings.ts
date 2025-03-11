@@ -23,7 +23,7 @@ export const STRINGS = {
   parentsName: "Manuela și Cristian & Mioara și Valentin",
   godParents: "Și împreună cu nașii noștri",
   godParentsName: "Cristina și Andrei",
-  church: "CUNUNIA RELIGIOASA",
+  church: "CUNUNIA RELIGIOASĂ",
   churchLabel: "Sâmbătă, 23 august 2025, 15:00",
   churchLocation: "Biserica Sfântul Antonie",
   churchLocation2: "Strada Jean Steriadi 19A, București",

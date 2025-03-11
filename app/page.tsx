@@ -13,6 +13,7 @@ import MasonryGrid from "@/app/_components/MasonryGrid";
 import Parents from "@/app/_components/Parents";
 import Location from "@/app/_components/Location";
 import Section from "@/app/_components/Section";
+import ScrollTop from "@/app/_components/ScrollTop";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <AnimatedComponent>
         <MasonryGrid />
       </AnimatedComponent>
+      <ScrollTop />
     </main>
   );
 }
