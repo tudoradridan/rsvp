@@ -5,7 +5,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Audio from "@/app/_components/Audio";
 
-import HeroImage from "@/app/images/hero.jpg";
+import HeroImage from "@/app/images/hero.png";
 
 const Hero: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Ana Maria & Andrei
+          Adina & Tudor
         </motion.h1>
         <motion.h5
           className="text-white text-md sm:text-2xl oswald-font"
@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          23 August 2025
+          27 Septembrie 2025
         </motion.h5>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}

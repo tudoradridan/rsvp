@@ -43,7 +43,7 @@ export async function submitRSVP(formData: FormData) {
       await resend.emails.send({
         from: "RSVP <onboarding@resend.dev>",
         to: STRINGS.sendToEmail,
-        subject: "Nunta Ana Maria & Andrei",
+        subject: "Nunta Adina & Tudor",
         html: `
         <h1>Aveti o noua invitatie completata</h1>
         <p><strong>Name:</strong> ${name}</p>

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import AnimatedComponent from "@/app/_components/AnimatedComponent";
 
 export const metadata: Metadata = {
-  title: "Invitatie 'Nunta Ama & Andrei'",
+  title: "Invitatie Adina & Tudor",
   description: "Invitatia ta la nunta.",
 };
 
