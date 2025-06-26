@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -38,7 +37,6 @@ const RSVPForm = () => {
     description3,
     description33,
     eventDate,
-    viewOnMapButton,
     nameLabel,
     emailLabel,
     accompanyLabel,
@@ -97,12 +95,6 @@ const RSVPForm = () => {
       }
     }
     setIsLoading(false);
-  };
-  const openGoogleMaps = () => {
-    const encodedLocation = encodeURIComponent(eventLocation);
-    window.open(
-      `https://www.google.com/maps/search/?api=1&query=${encodedLocation}`
-    );
   };
 
   return (
