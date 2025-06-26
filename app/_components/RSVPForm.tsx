@@ -42,7 +42,6 @@ const RSVPForm = () => {
     accompanyLabel,
     detailsLabel,
     submitButton,
-    eventLocation,
     menuLabel,
     menuSelect,
     menuStandard,
