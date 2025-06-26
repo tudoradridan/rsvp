@@ -127,17 +127,6 @@ const RSVPForm = () => {
           defaultMonth={new Date(eventDate)}
           ISOWeek
         />
-        <div className="mt-4">
-          <Button
-            className="w-full"
-            type="button"
-            variant="outline"
-            onClick={openGoogleMaps}
-          >
-            <MapPin />
-            {viewOnMapButton}
-          </Button>
-        </div>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">

@@ -29,7 +29,7 @@ export const STRINGS = {
   churchLocation2: "\"Saint George\" Church, Pitești",
   party: "PETRECEREA",
   partyLabel: "Sâmbătă, 27 septembrie 2025, 19:00",
-  partyLocation: "Aria Events",
+  partyLocation: "Aria Events (Complex Slava)",
   partyLocation2: `Aria Events - Restaurant pentru evenimente Pitești`,
   menuLabel: "Tip meniu",
   menuSelect: "Selectează tipul de meniu",
