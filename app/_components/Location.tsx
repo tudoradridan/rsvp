@@ -6,8 +6,8 @@ import Image from "next/image";
 import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import AugustImage from "@/app/images/august.png";
-import LocationImage from "@/app/images/location.png";
+import SeptemberImage from "@/app/images/september.png";
+import LocationImage from "@/app/images/location.jpg";
 import ChurchImage from "@/app/images/church.png";
 
 import { IoLocationOutline } from "react-icons/io5";
@@ -66,7 +66,7 @@ const Parents = () => {
             <p className="text-lg sm:text-2xl font-semibold my-4">{church}</p>
             <div className="flex flex-row gap-2">
               <Image
-                src={AugustImage}
+                src={SeptemberImage}
                 alt="Date Church Image"
                 width={20}
                 height={20}
@@ -110,7 +110,7 @@ const Parents = () => {
             <p className="text-lg sm:text-2xl font-semibold my-4">{party}</p>
             <div className="flex flex-row gap-2">
               <Image
-                src={AugustImage}
+                src={SeptemberImage}
                 alt="Date Church Image"
                 width={20}
                 height={20}

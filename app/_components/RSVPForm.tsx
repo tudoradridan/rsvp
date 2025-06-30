@@ -21,7 +21,6 @@ import { STRINGS } from "@/app/utils/strings";
 
 const RSVPForm = () => {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [menu, setMenu] = useState("standard");
   const [accompany, setAccompany] = useState<string | null>(null);
   const [attendance, setAttendance] = useState("Da");
@@ -38,7 +37,6 @@ const RSVPForm = () => {
     description33,
     eventDate,
     nameLabel,
-    emailLabel,
     accompanyLabel,
     detailsLabel,
     submitButton,
@@ -46,6 +44,7 @@ const RSVPForm = () => {
     menuSelect,
     menuStandard,
     menuVegetarian,
+    menuVegan,
     noOption,
   } = STRINGS;
 
@@ -57,14 +56,8 @@ const RSVPForm = () => {
       return;
     }
 
-    if (!email) {
-      setErrors((prev) => ({ ...prev, email: "Email is required" }));
-      return;
-    }
-
     const formData = new FormData();
     formData.append("name", name);
-    formData.append("email", email);
     formData.append("accompany", accompany || "0");
     formData.append("attendance", attendance);
     formData.append("menu", menu);
@@ -78,7 +71,6 @@ const RSVPForm = () => {
 
       // RESET FORM
       setName("");
-      setEmail("");
       setAccompany(null);
       setMenu("");
       setAttendance("");
@@ -134,18 +126,6 @@ const RSVPForm = () => {
           )}
         </div>
         <div>
-          <Label htmlFor="email">{emailLabel}</Label>
-          <Input
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          {errors.email && (
-            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
-          )}
-        </div>
-        <div>
           <Label htmlFor="accompany">{accompanyLabel}</Label>
           <Input
             id="accompany"
@@ -165,6 +145,7 @@ const RSVPForm = () => {
               <SelectGroup>
                 <SelectItem value="standard">{menuStandard}</SelectItem>
                 <SelectItem value="vegetarian">{menuVegetarian}</SelectItem>
+                <SelectItem value="vegan">{menuVegan}</SelectItem>
               </SelectGroup>
             </SelectContent>
           </Select>

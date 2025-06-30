@@ -10,7 +10,6 @@ export async function submitRSVP(formData: FormData) {
   const supabase = await createClient();
 
   const name = formData.get("name") as string;
-  const email = formData.get("email") as string;
   const accompany = formData.get("accompany") as string;
   const attendance = formData.get("attendance") as string;
   const menu = formData.get("menu") as string;
@@ -20,7 +19,6 @@ export async function submitRSVP(formData: FormData) {
   const { data, error } = await supabase.from("rsvps").insert([
     {
       name,
-      email,
       accompany,
       attendance,
       menu,
@@ -47,7 +45,6 @@ export async function submitRSVP(formData: FormData) {
         html: `
         <h1>Aveti o noua invitatie completata</h1>
         <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
         <p><strong>Number of Guests:</strong> ${accompany}</p>
         <p><strong>Attendance:</strong> ${attendance}</p>
         <p><strong>Menu:</strong> ${menu}</p>

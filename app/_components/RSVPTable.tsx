@@ -14,7 +14,6 @@ import { Input } from "@/components/ui/input";
 interface RSVP {
   id: string;
   name: string;
-  email: string;
   accompany: number;
   attendance: string;
   menu: string;
@@ -48,7 +47,6 @@ export function RSVPTable({ data }: RSVPTableProps) {
             <TableRow>
               <TableHead>Id</TableHead>
               <TableHead>Name</TableHead>
-              <TableHead>Email</TableHead>
               <TableHead>Number of Guests</TableHead>
               <TableHead>Menu</TableHead>
               <TableHead>Attending</TableHead>
@@ -61,7 +59,6 @@ export function RSVPTable({ data }: RSVPTableProps) {
                 <TableRow key={rsvp.id}>
                   <TableCell>{index + 1}</TableCell>
                   <TableCell>{rsvp.name}</TableCell>
-                  <TableCell>{rsvp.email}</TableCell>
                   <TableCell>{rsvp.accompany || "0"}</TableCell>
                   <TableCell>{rsvp.menu}</TableCell>
                   <TableCell>{rsvp.attendance}</TableCell>
