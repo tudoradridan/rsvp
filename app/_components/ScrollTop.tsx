@@ -34,7 +34,7 @@ const ScrollTop: React.FC = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="p-3 rounded-full bg-white shadow-lg hover:bg-slate-100 transition duration-300 text-gold-star"
+          className="p-3 rounded-full bg-white shadow-lg hover:bg-slate-100 transition duration-300 text-olive-star"
         >
           <GoArrowUp size={25} />
         </button>

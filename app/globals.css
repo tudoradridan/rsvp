@@ -123,3 +123,8 @@
 .allura-font {
   font-family: var(--font-allura);
 }
+
+.text-olive-star {
+  --tw-text-opacity: 1;
+  color: rgb(99 107 47 / var(--tw-text-opacity, 1));
+}

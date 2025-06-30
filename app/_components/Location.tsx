@@ -45,7 +45,7 @@ const Parents = () => {
   return (
     <>
       <div className="flex flex-col items-center w-full">
-        <h2 className="text-gold-star text-start md:text-center text-4xl allura-font font-bold">
+        <h2 className="text-olive-star text-start md:text-center text-4xl allura-font font-bold">
           {location}
         </h2>
         <h3 className="text-2xl font-semibold my-4 text-start md:text-center">

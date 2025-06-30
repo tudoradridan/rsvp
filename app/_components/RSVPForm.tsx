@@ -29,7 +29,6 @@ const RSVPForm = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const {
-    title,
     description,
     description2,
     description22,
@@ -90,9 +89,6 @@ const RSVPForm = () => {
 
   return (
     <section className="w-full max-w-3xl md:mx-auto my-10 p-4 shadow-lg  bg-white">
-      <h1 className="text-2xl font-bold mb-4 text-center text-gold-star">
-        {title}
-      </h1>
       <p className="mb-2 allura-font text-2xl text-center">{description}</p>
 
       <p className="text-center">{description2}</p>
@@ -156,6 +152,7 @@ const RSVPForm = () => {
             id="details"
             type="text"
             value={details}
+            placeholder="Ex. doresc meniu pentru copii"
             onChange={(e) => setDetails(e.target.value)}
           />
         </div>
