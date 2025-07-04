@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
         src={HeroImage}
         alt="Hero Image"
         layout="fill"
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", objectPosition: "20% center" }}
         quality={100}
         className="absolute inset-0"
         priority={true}
