@@ -31,6 +31,12 @@ export function RSVPTable({ data }: RSVPTableProps) {
     rsvp.name.toLowerCase().includes(filter.toLowerCase())
   );
 
+  // Calculate the total sum of accompany
+  const totalAccompany = filteredData.reduce(
+    (sum, rsvp) => sum + rsvp.accompany,
+    0
+  );
+
   return (
     <div>
       <div className="flex items-center py-4">
@@ -74,6 +80,7 @@ export function RSVPTable({ data }: RSVPTableProps) {
             )}
           </TableBody>
         </Table>
+        <h5>Total: {totalAccompany}</h5>
       </div>
     </div>
   );
