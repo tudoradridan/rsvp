@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body
         className={`${allura.variable} ${oswald.variable} antialiased`}
